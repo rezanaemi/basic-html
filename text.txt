@@ -1,1 +1,265 @@
 https://gist.github.com/dirkdunn/2ff2784e8c780f0f7c2cc2a909fc299c
+
+
+
+
+
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder
+$ thotch index.html REDME.md
+bash: thotch: command not found
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder
+$ touch index.html REDME.md
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder
+$ git init
+Initialized empty Git repository in C:/Users/reza/Desktop/New folder/.git/
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        REDME.md
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git add .
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   REDME.md
+        new file:   index.html
+
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "i creat tow file and try to push them in my git hub repository"
+[master (root-commit) e690423] i creat tow file and try to push them in my git hub repository
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 REDME.md
+ create mode 100644 index.html
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git push https://github.com/rezanaemi/basic-html.git git master
+error: src refspec git does not match any
+error: failed to push some refs to 'https://github.com/rezanaemi/basic-html.git'
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git push https://github.com/rezanaemi/basic-html.git master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 259 bytes | 259.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/rezanaemi/basic-html.git
+ * [new branch]      master -> master
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ nano REDME.md
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ touch text.txt
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ ls la
+ls: cannot access 'la': No such file or directory
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ ls -la
+total 13
+drwxr-xr-x 1 reza 197121  0 May  3 20:18 ./
+drwxr-xr-x 1 reza 197121  0 May  3 19:41 ../
+drwxr-xr-x 1 reza 197121  0 May  3 20:00 .git/
+-rw-r--r-- 1 reza 197121  0 May  3 19:47 index.html
+-rw-r--r-- 1 reza 197121 29 May  3 20:17 REDME.md
+-rw-r--r-- 1 reza 197121  0 May  3 20:18 text.txt
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git statos
+git: 'statos' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git statis
+git: 'statis' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ la -la
+bash: la: command not found
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ ls
+index.html  REDME.md  text.txt
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git add .
+warning: LF will be replaced by CRLF in REDME.md.
+The file will have its original line endings in your working directory
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   REDME.md
+        new file:   text.txt
+
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "writ somting"
+[master 5ac0c1f] writ somting
+ 2 files changed, 1 insertion(+)
+ create mode 100644 text.txt
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git push https://github.com/rezanaemi/basic-html.git master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/rezanaemi/basic-html.git
+   e690423..5ac0c1f  master -> master
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git remot
+git: 'remot' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ ls
+index.html  REDME.md  text.txt
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ nano text.txt
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   text.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git add .
+warning: LF will be replaced by CRLF in text.txt.
+The file will have its original line endings in your working directory
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   text.txt
+
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git remot html https://github.com/rezanaemi/basic-html git master
+git: 'remot' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ ls
+index.html  REDME.md  text.txt
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   text.txt
+
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git commit " i add help url in text file"
+error: pathspec ' i add help url in text file' did not match any file(s) known to git
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git commit -m " i add help url in text file"
+[master 95d2b08]  i add help url in text file
+ 1 file changed, 1 insertion(+)
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git remote -v
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git remote add html https://github.com/rezanaemi/basic-html
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git remote -v
+html    https://github.com/rezanaemi/basic-html (fetch)
+html    https://github.com/rezanaemi/basic-html (push)
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
+$ git push html master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 322 bytes | 322.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/rezanaemi/basic-html
+   5ac0c1f..95d2b08  master -> master
+
+reza@DESKTOP-CM6BK08 MINGW64 ~/Desktop/New folder (master)
